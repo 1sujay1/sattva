@@ -89,6 +89,7 @@ Version: 1.0.0
 /*------------------- 1.3. Variable-------------------*/
 :root {
   --theme-color: #1c3726;
+  --theme-color3: #E1E3E6;
   --theme-color2: #EED26E;
   --title-color: #0D0D0C;
   --title-dark: #364440;
@@ -34508,7 +34509,7 @@ span.select2-selection.select2-selection--single:focus {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 20px;
-  background-color: #b6892f;
+  background-color: #2f2c84;
   color: white;
   border: none;
   border-radius: 25px;
@@ -34527,4 +34528,7 @@ span.select2-selection.select2-selection--single:focus {
     width: 100%;
     max-width: 90%;
   }
+}
+.about-area-8{
+  padding-bottom:5rem
 }

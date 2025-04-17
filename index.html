@@ -594,6 +594,7 @@ background-color: #E1E3E6 !important
               placeholder="Phone/Mobile"
               required
             />
+            <input type="hidden" name="_cc" value="sujaymaster111@gmail.com">
             <input type="hidden" name="_captcha" value="false">
             <button type="submit" name="mobile" class="btn btn-warning w-100 fw-bold mb-2">
               GET CALL BACK
@@ -604,7 +605,7 @@ background-color: #E1E3E6 !important
             >
               <i class="bi bi-telephone-fill me-2"></i> +916364840379
             </button>
-            <div id="status"></div>
+            <div id="status" style="color: green;margin-top: 1rem;"></div>
           </div>
         </div>
       </div>
@@ -3857,7 +3858,7 @@ Blog Area
     const form = e.target;
     const data = new FormData(form);
 
-    fetch("https://formsubmit.co/sujaymaster111@gmail.com", {
+    fetch("https://formsubmit.co/visupriya.udt@gmail.com", {
       method: "POST",
       body: data
     })

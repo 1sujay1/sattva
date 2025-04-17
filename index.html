@@ -572,7 +572,7 @@ background-color: #E1E3E6 !important
               class="img-fluid mb-3"
               style="max-height: 60px"
             />
-            <form class="contact-form">
+            <form id="contact-form">
             <input
             name="name"
               type="text"
@@ -605,7 +605,7 @@ background-color: #E1E3E6 !important
             >
               <i class="bi bi-telephone-fill me-2"></i> +916364840379
             </button>
-            <div class="status" style="color: green;margin-top: 1rem;"></div>
+            <div id="status" style="color: green;margin-top: 1rem;"></div>
           </div>
         </div>
       </div>
@@ -3290,8 +3290,8 @@ Contact Area
                   Schedule a visit
                 </h2>
                 <form
-                
-                  class="appointment-form ajax-contact contact-form"
+                id="contact-form2"
+                  class="appointment-form ajax-contact"
                 >
                   <div class="row">
                     <div class="form-group style-border style-radius col-12">
@@ -3355,7 +3355,7 @@ Contact Area
                         /></span>
                       </button>
                     </div>
-                    <div class="status" style="color: green;margin-top: 1rem;"></div>
+                    <div id="status2" style="color: green;margin-top: 1rem;"></div>
                    
                   </div>
                   <input type="hidden" name="_cc" value="visupriya.udt@gmail.com,sujaymaster111@gmail.com">
@@ -3859,27 +3859,46 @@ Blog Area
         },
       });
 
-      document.querySelectorAll(".contact-form").forEach(function(form){
-        form.addEventListener("submit",function(e){
-          e.preventDefault(); // prevent page reload
+      document.getElementById("contact-form").addEventListener("submit", function(e) {
+        e.preventDefault(); // prevent page reload
 
-    const form = e.target;
-    const data = new FormData(form);
-    const statusEl = form.querySelector(".status");
-    fetch("https://formsubmit.co/charles@teamvintagerealty.com", {
-      method: "POST",
-      body: data
-    })
-    .then(response => {
-      statusEl.innerText = "Thank you! Your message has been sent.";
-      form.reset();
-    })
-    .catch(error => {
-      statusEl.innerText = "Oops! Something went wrong.";
-    });
+        const form = e.target;
+        const data = new FormData(form);
+
+        fetch("https://formsubmit.co/charles@teamvintagerealty.com", {
+          method: "POST",
+          body: data
         })
+        .then(response => {
+          document.getElementById("status").innerText = "Thank you! Your message has been sent.";
+          form.reset();
+        })
+        .catch(error => {
+          document.getElementById("status").innerText = "Oops! Something went wrong.";
+        });
+
       })
-  //     document.getElementById("contact-form").addEventListener("submit", function(e) {
+      document.getElementById("contact-form2").addEventListener("submit", function(e) {
+        e.preventDefault(); // prevent page reload
+
+        const form = e.target;
+        const data = new FormData(form);
+
+        fetch("https://formsubmit.co/charles@teamvintagerealty.com", {
+          method: "POST",
+          body: data
+        })
+        .then(response => {
+          document.getElementById("status2").innerText = "Thank you! Your message has been sent.";
+          form.reset();
+          alert()
+        })
+        .catch(error => {
+          document.getElementById("status2").innerText = "Oops! Something went wrong.";
+        });
+
+      })
+    //     document.getElementById("contact-form").addEventListener("submit", function(e) {
   //   e.preventDefault(); // prevent page reload
 
   //   const form = e.target;

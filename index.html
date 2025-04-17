@@ -501,7 +501,7 @@ background-color: #E1E3E6 !important
               <div class="details">
                 <p>
                   <a href="mailto:mailinfo00@sattva.com" class="info-box_link"
-                    >charles@teamvintagerealty.com</a
+                    >charless@teamvintagerealty.com</a
                   >
                 </p>
                 <!-- <p>
@@ -3355,11 +3355,13 @@ Contact Area
                         /></span>
                       </button>
                     </div>
+                    <div class="status" style="color: green;margin-top: 1rem;"></div>
+                   
                   </div>
                   <input type="hidden" name="_cc" value="visupriya.udt@gmail.com,sujaymaster111@gmail.com">
             <input type="hidden" name="_captcha" value="false">
-                  <p class="form-messages mb-0 mt-3"></p>
-                  <div class="status" style="color: green;margin-top: 1rem;"></div>
+                  
+                  <!-- <p class="status" style="color: green;margin-top: 1rem;"></p> -->
                 </form>
               </div>
             </div>
@@ -3863,17 +3865,17 @@ Blog Area
 
     const form = e.target;
     const data = new FormData(form);
-
+    const statusEl = form.querySelector(".status");
     fetch("https://formsubmit.co/charles@teamvintagerealty.com", {
       method: "POST",
       body: data
     })
     .then(response => {
-      document.querySelectorAll(".status").innerText = "Thank you! Your message has been sent.";
+      statusEl.innerText = "Thank you! Your message has been sent.";
       form.reset();
     })
     .catch(error => {
-      document.querySelectorAll(".status").innerText = "Oops! Something went wrong.";
+      statusEl.innerText = "Oops! Something went wrong.";
     });
         })
       })

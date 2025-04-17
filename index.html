@@ -130,6 +130,9 @@
 
   <body class="bg-theme">
     <style>
+     #priceTitle {
+  scroll-margin-top: 600px !important;
+}
       .th-hero-wrapper {
         background-color: #fff;
       }
@@ -216,38 +219,93 @@
       .floor-img {
         width: 100%;
         height: 315px !important;
+        filter: blur(3px) !important;
       }
 
-      .price-card {
-        background-color: #eee;
-        padding: 30px 20px;
-        border-radius: 10px;
-        text-align: center;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        height: 100%;
-      }
+      /* price list*/
+.price-section {
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
 
-      .price-card-header {
-        background-color: #000;
-        color: #fff;
-        font-weight: bold;
-        padding: 8px 0;
-        margin-bottom: 20px;
-        border: 1px solid #bb8832;
-      }
+.price-section h2 {
+  color: #fcfcfc;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
 
-      .price-card-body p {
-        font-size: 18px;
-        margin-bottom: 10px;
-      }
+.price-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
 
-      .price-text {
-        font-size: 20px;
-        font-weight: 600;
-        border-bottom: 1px dotted #000;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-      }
+.price-card {
+  background-color: #ddd;
+  width: 300px;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+  position: relative;
+}
+
+.price-card h3 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: -30px -20px 20px;
+  font-size: 1.2em;
+  border: 2px solid #b6892f;
+  text-align: center;
+}
+
+.price-card p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.price-card p span {
+  font-weight: bold;
+}
+
+.price-card .price {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+  text-align: center;
+}
+
+.price-card .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #2f2c84;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #9a7226;
+}
+
+@media (max-width: 768px) {
+  .price-card {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+.about-area-8{
+  padding-bottom:5rem
+}
 
       .btn-floor {
         margin: 24px;
@@ -266,6 +324,45 @@
       .btn-floor:hover {
         background-color: #a16e1c;
       }
+      .sidebar-btn{
+        background-color: transparent;
+      }
+      .header-layout4 .menu-area,.header-layout4 .sticky-wrapper,.header-layout4 .sticky-wrapper.sticky{
+background-color: #E1E3E6 
+      }
+      .about-area-8,#features,#ourLocations,.pfd-card,.mobile-logo,#contact-sec,#priceList{
+        background-color:#ffffff !important ;
+      }
+.main-menu a,.text-theme,.sub-title3,.hero-8 .about-tag .about-experience-tag,.sub-title3,.sec-title,.checklist.style6 li,.btn-title,.priceList{
+  color: #2f2c84 !important;
+}
+.checklist.style6 li:before{
+  filter: brightness(0.5);
+}
+ .th-btn.style-border,.th-btn.style-border:hover,.sidebar-btn.style2 .line,.th-btn.style2,.style5,.sidebar-btn span{
+  background-color:#2f2c84 !important
+}
+.th-btn,.th-btn:hover,.th-btn.style-border:hover{
+  color:#ffffff;
+  cursor: pointer;
+}
+.th-btn.style-border4,.property-plan-tabs .nav-item .nav-link{
+  border: 1px solid #2f2c84;
+  color: #2f2c84 !important;
+}
+.th-btn.style-border4:hover,.property-plan-tabs .nav-item .nav-link.active,.th-btn{
+  background-color:#2f2c84 ;
+  color:#ffffff !important;
+}
+.hero-8{
+  padding-top: 10rem !important;
+}
+.hero-desc{
+  color:#A4B5BA !important
+}
+#features {
+  scroll-margin-top: 80px; /* Adjust this based on your header height */
+}
     </style>
     <!--[if lte IE 9]>
       <p class="browserupgrade">
@@ -386,7 +483,7 @@
               <div class="details">
                 <p>
                   <a href="tel:+0123456789" class="info-box_link"
-                    >+91-6364840379</a
+                    >+91-99524 02011</a
                   >
                 </p>
                 <!-- <p>
@@ -403,7 +500,7 @@
               <div class="details">
                 <p>
                   <a href="mailto:mailinfo00@sattva.com" class="info-box_link"
-                    >charles@teamvintagerealty.com</a
+                    >visupriya.udt@gmail.com</a
                   >
                 </p>
                 <!-- <p>
@@ -497,7 +594,7 @@
             <button
               class="btn btn-warning w-100 d-flex align-items-center justify-content-center"
             >
-              <i class="bi bi-telephone-fill me-2"></i> +91-6364840379
+              <i class="bi bi-telephone-fill me-2"></i> +91-99524 02011
             </button>
           </div>
         </div>
@@ -533,7 +630,7 @@
                       <a href="#floorPlan"> Floor Plan </a>
                     </li>
                     <li class="">
-                      <a href="#priceList"> Price List </a>
+                      <a href="#priceTitle"> Price List </a>
                     </li>
                     <li class="">
                       <a href="#gallerySection"> Gallery </a>
@@ -601,11 +698,11 @@ Hero Area
                 <div class="row gy-50 align-items-center">
                   <div class="col-xl-6">
                     <div class="hero-style8">
-                      <!-- <span
+                      <span
                         class="sub-title3 before-none"
                         data-ani="slideinup"
                         data-ani-delay="0.3s"
-                        >Don't Miss Out!</span -->
+                        >Don't Miss Out!</span
                       >
                       <h6 class="hero-title text-theme">
                         <span
@@ -617,7 +714,7 @@ Hero Area
                         </span>
                       </h6>
                       <p
-                        class="hero-text text-theme"
+                        class="hero-text text-theme hero-desc"
                         data-ani="slideinup"
                         data-ani-delay="0.6s"
                       >
@@ -691,7 +788,7 @@ Hero Area
                         </span>
                       </h1>
                       <p
-                        class="hero-text text-theme"
+                        class="hero-text text-theme hero-desc"
                         data-ani="slideinup"
                         data-ani-delay="0.6s"
                       >
@@ -768,7 +865,7 @@ Hero Area
                         </span>
                       </h1>
                       <p
-                        class="hero-text text-theme"
+                        class="hero-text text-theme hero-desc"
                         data-ani="slideinup"
                         data-ani-delay="0.6s"
                       >
@@ -845,7 +942,7 @@ Hero Area
                         </span>
                       </h1>
                       <p
-                        class="hero-text text-theme"
+                        class="hero-text text-theme hero-desc"
                         data-ani="slideinup"
                         data-ani-delay="0.6s"
                       >
@@ -922,7 +1019,7 @@ Hero Area
                         </span>
                       </h1>
                       <p
-                        class="hero-text text-theme"
+                        class="hero-text text-theme hero-desc"
                         data-ani="slideinup"
                         data-ani-delay="0.6s"
                       >
@@ -999,7 +1096,7 @@ Hero Area
                         </span>
                       </h1>
                       <p
-                        class="hero-text text-theme"
+                        class="hero-text text-theme hero-desc"
                         data-ani="slideinup"
                         data-ani-delay="0.6s"
                       >
@@ -1149,7 +1246,7 @@ Hero Area
      <!--==============================
 About Area  
 ==============================-->
-<div class="about-area-8 space overflow-hidden" id="about-sec">
+<div class="about-area-8" id="about-sec">
   <div class="container">
     <div class="row gx-80 justify-content-between">
       <div class="col-xl-6">
@@ -1190,7 +1287,7 @@ About Area
             <div class="btn-content">
               <h6 class="btn-title">Call Us 24/7</h6>
               <span class="btn-text"
-                ><a href="tel:6364840379">+91 6364840379</a></span>
+                ><a href="tel:99524 02011">+91 99524 02011</a></span>
               
             </div>
           </div>
@@ -1269,7 +1366,7 @@ Service Area
         >
       </div> -->
 
-      <section class="space-top w-100" id="features">
+      <section class="w-100" id="features">
         <div class="container-fluid px-3 px-md-5">
           <div class="row justify-content-center mb-4">
             <div class="col-lg-8 text-center">
@@ -1397,7 +1494,7 @@ Service Area
   
   
   
-<!-- <section class="space-top" id="features">
+<section class="space-top" id="ourLocations">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -1405,7 +1502,7 @@ Service Area
               <span
                 class="sub-title3 text-theme2 justify-content-center"
                 style="font-size: 25px"
-                >Features & Amenities</span
+                >Locations</span
               >
             </div>
           </div>
@@ -1418,7 +1515,7 @@ Service Area
               </div>
               <h3 class="box-title">
                 <a href="property-details.html" class="openCallbackModal"
-                  >5-Tier Security</a
+                  >Manyata Tech Park <br>30 Mins</a
                 >
               </h3>
             </div>
@@ -1430,7 +1527,7 @@ Service Area
               </div>
               <h3 class="box-title">
                 <a href="property-details.html" class="openCallbackModal"
-                  >Gym</a
+                  > International Airport <br>10 Mins</a
                 >
               </h3>
             </div>
@@ -1442,7 +1539,7 @@ Service Area
               </div>
               <h3 class="box-title">
                 <a href="property-details.html" class="openCallbackModal"
-                  >Swimming Pool</a
+                  >Devanahalli Business Park <br>10 Mins</a
                 >
               </h3>
             </div>
@@ -1454,7 +1551,7 @@ Service Area
               </div>
               <h3 class="box-title">
                 <a href="property-details.html" class="openCallbackModal"
-                  >Air Purification</a
+                  >Oxford English School <br> 2 Mins</a
                 >
               </h3>
             </div>
@@ -1466,7 +1563,7 @@ Service Area
               </div>
               <h3 class="box-title">
                 <a href="property-details.html" class="openCallbackModal"
-                  >Health Cafe</a
+                  >Nandi Hills <br>20 Mins</a
                 >
               </h3>
             </div>
@@ -1478,18 +1575,18 @@ Service Area
               </div>
               <h3 class="box-title">
                 <a href="property-details.html" class="openCallbackModal"
-                  >Private Park</a
+                  >Manyata Tech Park <br>30 Mins</a
                 >
               </h3>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!--Location start-->
 
-    <section
+    <!-- <section
       class="service-area-3 space overflow-hidden"
       id="ourLocations"
       style="background-color: #fff"
@@ -1505,7 +1602,6 @@ Service Area
         <div class="row justify-content-start align-items-center">
           <div class="col-xl-7 col-lg-8">
             <div class="title-area">
-              <!-- <span class="sub-title">Transforming Vision into Reality</span> -->
               <h2 class="sec-title text-theme">Locations</h2>
               <h6 class="text-theme">Sattva Park Cubix</h6>
             </div>
@@ -1519,7 +1615,6 @@ Service Area
             <div class="swiper-slide">
               <div class="service-card style7">
                 <div class="service-img">
-                  <!-- <img src="assets/img/service/6-1.png" alt="img" /> -->
                   <a
                     href="property-details.html"
                     class="icon-btn openCallbackModal"
@@ -1544,7 +1639,6 @@ Service Area
             <div class="swiper-slide">
               <div class="service-card style7">
                 <div class="service-img">
-                  <!-- <img src="assets/img/service/6-2.png" alt="img" /> -->
                   <a
                     href="property-details.html"
                     class="icon-btn openCallbackModal"
@@ -1569,7 +1663,6 @@ Service Area
             <div class="swiper-slide">
               <div class="service-card style7">
                 <div class="service-img">
-                  <!-- <img src="assets/img/service/6-3.png" alt="img" /> -->
                   <a
                     href="property-details.html"
                     class="icon-btn openCallbackModal"
@@ -1592,7 +1685,6 @@ Service Area
             <div class="swiper-slide">
               <div class="service-card style7">
                 <div class="service-img">
-                  <!-- <img src="assets/img/service/6-4.png" alt="img" /> -->
                   <a
                     href="property-details.html"
                     class="icon-btn openCallbackModal"
@@ -1617,7 +1709,6 @@ Service Area
             <div class="swiper-slide">
               <div class="service-card style7">
                 <div class="service-img">
-                  <!-- <img src="assets/img/service/6-1.png" alt="img" /> -->
                   <a
                     href="property-details.html"
                     class="icon-btn openCallbackModal"
@@ -1642,7 +1733,7 @@ Service Area
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
    
 
     <!------Gallery Area Start-->
@@ -1692,7 +1783,7 @@ Service Area
           >
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="portfolio-card style4">
+                <div class="portfolio-card style4 pfd-card">
                   <div class="portfolio-img">
                     <img
                       src="assets/img/gallery/gallery_img1.png"
@@ -1734,7 +1825,7 @@ Service Area
               </div>
 
               <div class="swiper-slide">
-                <div class="portfolio-card style4">
+                <div class="portfolio-card style4 pfd-card">
                   <div class="portfolio-img">
                     <img
                       src="assets/img/gallery/gallery_img2.png"
@@ -1750,7 +1841,7 @@ Service Area
               </div>
 
               <div class="swiper-slide">
-                <div class="portfolio-card style4">
+                <div class="portfolio-card style4 pfd-card">
                   <div class="portfolio-img">
                     <img
                       src="assets/img/gallery/gallery_img3.png"
@@ -1766,7 +1857,7 @@ Service Area
               </div>
 
               <div class="swiper-slide">
-                <div class="portfolio-card style4">
+                <div class="portfolio-card style4 pfd-card">
                   <div class="portfolio-img">
                     <img
                       src="assets/img/gallery/gallery_img4.png"
@@ -1782,7 +1873,7 @@ Service Area
               </div>
 
               <div class="swiper-slide">
-                <div class="portfolio-card style4">
+                <div class="portfolio-card style4 pfd-card">
                   <div class="portfolio-img">
                     <img
                       src="assets/img/gallery/gallery_img5.png"
@@ -1798,7 +1889,7 @@ Service Area
               </div>
 
               <div class="swiper-slide">
-                <div class="portfolio-card style4">
+                <div class="portfolio-card style4 pfd-card">
                   <div class="portfolio-img">
                     <img
                       src="assets/img/gallery/gallery_img1.png"
@@ -1817,8 +1908,8 @@ Service Area
           </div>
         </div>
         <div class="btn-wrap justify-content-center mt-55">
-          <a href="property.html" class="th-btn style4 th-btn-icon"
-            >Browse All Projects</a
+          <a href="property.html" class="th-btn style4 th-btn-icon openCallbackModal"
+            >Download Brochure</a
           >
         </div>
       </div>
@@ -2210,7 +2301,7 @@ Property Area 2
     <!-- Master Plan-->
 
     
-      <section class="bg-white space overflow-hidden"
+      <section class="bg-white overflow-hidden"
       id="floorPlan"
       data-bg-src="assets/img/bg/property-plan-bg-1.png"
     >
@@ -3139,38 +3230,49 @@ Team Area
 
 
 <!-- PRICE LIST SECTION -->
-<section  class="price-section">
-  <h2 >Price List</h2>
+<section  class="price-section" id="priceList">
+  <h2 class="priceList" id="priceTitle">Price List</h2>
   <div class="price-grid">
     <div class="price-card">
       <h3>Studio</h3>
-      <p><span>Area :</span> 449 Sq.ft.</p>
+      <p style="text-align: center;"><span>Area :</span> 449 Sq.ft.</p>
       <p class="price">Starts At ₹ 35 Lacs* Onwards</p>
-      <a class="btn" href="#">Know More</a>
+      <div style="width: 100%; text-align: center;">
+        <a class="btn knowMore" href="#">Know More</a>
+      </div>
+     
     </div>
     <div class="price-card">
       <h3>1 BHK</h3>
-      <p><span>Area :</span> 672 Sq.ft.</p>
+      <p style="text-align: center;"><span>Area :</span> 672 Sq.ft.</p>
       <p class="price">Starts At ₹ 54 Lacs* Onwards</p>
-      <a class="btn" href="#">Know More</a>
+      <div style="width: 100%; text-align: center;">
+        <a class="btn knowMore" href="#">Know More</a>
+      </div>
     </div>
     <div class="price-card">
       <h3>2 BHK</h3>
-      <p><span>Area :</span> 1082 Sq.ft.</p>
+      <p style="text-align: center;"><span>Area :</span> 1082 Sq.ft.</p>
       <p class="price">Starts At ₹ 89 Lacs* Onwards</p>
-      <a class="btn" href="#">Know More</a>
+      <div style="width: 100%; text-align: center;">
+        <a class="btn knowMore" href="#">Know More</a>
+      </div>
     </div>
     <div class="price-card">
       <h3>3 BHK + 2T</h3>
-      <p><span>Area :</span> 1457 Sq.ft.</p>
+      <p style="text-align: center;"><span>Area :</span> 1457 Sq.ft.</p>
       <p class="price">Starts At ₹ 1.18 Cr* Onwards</p>
-      <a class="btn" href="#">Know More</a>
+      <div style="width: 100%; text-align: center;">
+        <a class="btn knowMore" href="#">Know More</a>
+      </div>
     </div>
     <div class="price-card">
       <h3>3 BHK + 3T</h3>
-      <p><span>Area :</span> 1702 Sq.ft.</p>
+      <p style="text-align: center;"><span>Area :</span> 1702 Sq.ft.</p>
       <p class="price">Starts At ₹ 1.38 Cr* Onwards</p>
-      <a class="btn" href="#">Know More</a>
+      <div style="width: 100%; text-align: center;">
+        <a class="btn knowMore" href="#">Know More</a>
+      </div>
     </div>
   </div>
 </section>
@@ -3550,7 +3652,7 @@ Blog Area
                       <div class="details">
                         <p>
                           <a href="tel:+0123456789" class="info-box_link"
-                            >+91 6364840379</a
+                            >+91 99524 02011</a
                           >
                         </p>
                         <!-- <p>
@@ -3569,7 +3671,7 @@ Blog Area
                           <a
                             href="mailto:mailinfo00@sattva.com"
                             class="info-box_link"
-                            >charles@teamvintagerealty.com</a
+                            >visupriya.udt@gmail.com</a
                           >
                         </p>
                         <!-- <p>
@@ -3661,7 +3763,7 @@ Blog Area
         ></path>
       </svg>
     </div>
-
+    
     <!--==============================
     All Js File
 ============================== -->

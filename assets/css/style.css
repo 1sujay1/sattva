@@ -4757,8 +4757,8 @@ textarea.is-invalid {
 
 .sub-title3 {
   color: var(--theme-color);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 600;
   font-family: var(--title-font);
   text-transform: uppercase;
   position: relative;
@@ -4772,7 +4772,7 @@ textarea.is-invalid {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -0.4em;
+  margin-top: -0.1em;
 }
 
 .sub-title3:after, .sub-title3:before {
@@ -5677,7 +5677,7 @@ hr.title-line {
 }
 
 .text-light {
-  color: var(--light-color) !important;
+  color: var(--black-color) !important;
 }
 
 .text-yellow {
@@ -8860,10 +8860,10 @@ ol.wp-block-rss {
 .main-menu a {
   display: block;
   position: relative;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   font-family: var(--body-font);
-  color: var(--white-color);
+  color: #2F2C84;
 }
 
 .main-menu a:hover {
@@ -16867,11 +16867,11 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .call-btn.style2 .btn-text a {
-  color: var(--white-color);
+  color:#2F2C84;
 }
 
 .call-btn.style2 .btn-text a:hover {
-  color: var(--theme-color2);
+  color: rgb(10, 10, 107);
 }
 
 @media (max-width: 1399px) {
@@ -25296,7 +25296,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .hero-style4 .hero-title {
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.2em;
   margin-bottom: 16px;
 }
@@ -28201,8 +28201,8 @@ span.select2-selection.select2-selection--single:focus {
 
 .hero-style8 .hero-title {
   margin-bottom: 15px;
-  font-size: 80px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 600;
 }
 
 .hero-style8 .hero-text {
@@ -28913,7 +28913,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .property-plan-details {
-  background: var(--theme-color);
+  background: #2F2C84;
   border-radius: 16px;
   padding: 40px;
   /* Extra small devices */
@@ -28927,7 +28927,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .property-plan-details ul li {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--white-color);
   display: -webkit-box;

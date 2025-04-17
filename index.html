@@ -572,7 +572,7 @@ background-color: #E1E3E6 !important
               class="img-fluid mb-3"
               style="max-height: 60px"
             />
-            <form id="contact-form">
+            <form class="contact-form">
             <input
             name="name"
               type="text"
@@ -594,7 +594,7 @@ background-color: #E1E3E6 !important
               placeholder="Phone/Mobile"
               required
             />
-            <input type="hidden" name="_cc" value="visupriya.udt@gmail.com">
+            <input type="hidden" name="_cc" value="visupriya.udt@gmail.com,sujaymaster111@gmail.com">
             <input type="hidden" name="_captcha" value="false">
             <button type="submit" name="mobile" class="btn btn-warning w-100 fw-bold mb-2">
               GET CALL BACK
@@ -3840,8 +3840,10 @@ Blog Area
           },
         },
       });
-      document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault(); // prevent page reload
+
+      document.querySelectorAll(".contact-form").forEach(function(form){
+        form.addEventListener("submit",function(e){
+          e.preventDefault(); // prevent page reload
 
     const form = e.target;
     const data = new FormData(form);
@@ -3857,8 +3859,29 @@ Blog Area
     .catch(error => {
       document.getElementById("status").innerText = "Oops! Something went wrong.";
     });
-  });
-    </script>
+        })
+      })
+  //     document.getElementById("contact-form").addEventListener("submit", function(e) {
+  //   e.preventDefault(); // prevent page reload
+
+  //   const form = e.target;
+  //   const data = new FormData(form);
+
+  //   fetch("https://formsubmit.co/charles@teamvintagerealty.com", {
+  //     method: "POST",
+  //     body: data
+  //   })
+  //   .then(response => {
+  //     document.getElementById("status").innerText = "Thank you! Your message has been sent.";
+  //     form.reset();
+  //   })
+  //   .catch(error => {
+  //     document.getElementById("status").innerText = "Oops! Something went wrong.";
+  //   });
+  // });
+   
+  
+  </script>
     
     
   </body>

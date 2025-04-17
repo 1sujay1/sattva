@@ -8860,10 +8860,10 @@ ol.wp-block-rss {
 .main-menu a {
   display: block;
   position: relative;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   font-family: var(--body-font);
-  color: var(--white-color);
+  color: #2F2C84;
 }
 
 .main-menu a:hover {
@@ -16867,7 +16867,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .call-btn.style2 .btn-text a {
-  color:var (var(--theme-color));
+  color:#2F2C84;
 }
 
 .call-btn.style2 .btn-text a:hover {
@@ -28913,7 +28913,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .property-plan-details {
-  background: var(--theme-color);
+  background: #2F2C84;
   border-radius: 16px;
   padding: 40px;
   /* Extra small devices */

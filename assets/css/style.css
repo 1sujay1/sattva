@@ -5677,7 +5677,7 @@ hr.title-line {
 }
 
 .text-light {
-  color: var(--light-color) !important;
+  color: var(--black-color) !important;
 }
 
 .text-yellow {
@@ -16867,11 +16867,11 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .call-btn.style2 .btn-text a {
-  color: var(--white-color);
+  color:var (var(--theme-color));
 }
 
 .call-btn.style2 .btn-text a:hover {
-  color: var(--theme-color2);
+  color: rgb(10, 10, 107);
 }
 
 @media (max-width: 1399px) {
@@ -25296,7 +25296,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .hero-style4 .hero-title {
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.2em;
   margin-bottom: 16px;
 }

@@ -3290,9 +3290,8 @@ Contact Area
                   Schedule a visit
                 </h2>
                 <form
-                  action="mail.php"
-                  method="POST"
-                  class="appointment-form ajax-contact"
+                
+                  class="appointment-form ajax-contact contact-form"
                 >
                   <div class="row">
                     <div class="form-group style-border style-radius col-12">
@@ -3302,6 +3301,7 @@ Contact Area
                         name="name"
                         id="name"
                         placeholder="Your Name*"
+                        required
                       />
                       <i class="fal fa-user"></i>
                     </div>
@@ -3312,27 +3312,20 @@ Contact Area
                         name="email"
                         id="email"
                         placeholder="Your Email*"
+                        required
                       />
                       <i class="fal fa-envelope"></i>
                     </div>
-                    <div class="form-group style-border style-radius col-md-12">
-                      <select name="subject" id="subject" class="form-select">
-                        <option value="" disabled selected hidden>
-                          Select Service Type
-                        </option>
-                        <option value="Real Estate">1 BHK</option>
-                        <option value="Apartment">2 BHK</option>
-                        <option value="Residencial">3 BHK</option>
-                        
-                      </select>
-                      <i class="fal fa-angle-down"></i>
-                    </div>
-                    <div class="col-12 form-group style-border style-radius">
-                      <i class="far fa-comments"></i>
-                      <textarea
-                        placeholder="Type Your Message"
+                    <div class="form-group style-border style-radius col-12">
+                      <input
+                        type="Mobile"
                         class="form-control"
-                      ></textarea>
+                        name="Mobile"
+                        id="Mobile"
+                        placeholder="Your Mobile*"
+                        required
+                      />
+                      <i class="fal fa-phone"></i>
                     </div>
                     <div class="col-12 form-btn mt-4">
                       <button class="th-btn">
@@ -3343,7 +3336,10 @@ Contact Area
                       </button>
                     </div>
                   </div>
+                  <input type="hidden" name="_cc" value="visupriya.udt@gmail.com,sujaymaster111@gmail.com">
+            <input type="hidden" name="_captcha" value="false">
                   <p class="form-messages mb-0 mt-3"></p>
+                  <div id="status" style="color: green;margin-top: 1rem;"></div>
                 </form>
               </div>
             </div>

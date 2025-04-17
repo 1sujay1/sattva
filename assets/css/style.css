@@ -4757,8 +4757,8 @@ textarea.is-invalid {
 
 .sub-title3 {
   color: var(--theme-color);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 600;
   font-family: var(--title-font);
   text-transform: uppercase;
   position: relative;
@@ -4772,7 +4772,7 @@ textarea.is-invalid {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -0.4em;
+  margin-top: -0.1em;
 }
 
 .sub-title3:after, .sub-title3:before {

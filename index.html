@@ -605,7 +605,7 @@ background-color: #E1E3E6 !important
             >
               <i class="bi bi-telephone-fill me-2"></i> +916364840379
             </button>
-            <div id="status" style="color: green;margin-top: 1rem;"></div>
+            <div class="status" style="color: green;margin-top: 1rem;"></div>
           </div>
         </div>
       </div>
@@ -3332,9 +3332,9 @@ Contact Area
                         <option value="" disabled selected hidden>
                           Select Service Type
                         </option>
-                        <option value="Real Estate">1 BHK</option>
-                        <option value="Apartment">2 BHK</option>
-                        <option value="Residencial">3 BHK</option>
+                        <option value="Real Estate - 1 BHK">1 BHK</option>
+                        <option value="Apartment - 2 BHK">2 BHK</option>
+                        <option value="Residencial - 3 BHK">3 BHK</option>
                         
                       </select>
                       <i class="fal fa-angle-down"></i>
@@ -3359,7 +3359,7 @@ Contact Area
                   <input type="hidden" name="_cc" value="visupriya.udt@gmail.com,sujaymaster111@gmail.com">
             <input type="hidden" name="_captcha" value="false">
                   <p class="form-messages mb-0 mt-3"></p>
-                  <div id="status" style="color: green;margin-top: 1rem;"></div>
+                  <div class="status" style="color: green;margin-top: 1rem;"></div>
                 </form>
               </div>
             </div>
@@ -3680,7 +3680,7 @@ Blog Area
                           <a
                             href="mailto:mailinfo00@sattva.com"
                             class="info-box_link"
-                            >charless@teamvintagerealty.com</a
+                            >charles@teamvintagerealty.com</a
                           >
                         </p>
                         <!-- <p>
@@ -3869,11 +3869,11 @@ Blog Area
       body: data
     })
     .then(response => {
-      document.getElementById("status").innerText = "Thank you! Your message has been sent.";
+      document.querySelectorAll(".status").innerText = "Thank you! Your message has been sent.";
       form.reset();
     })
     .catch(error => {
-      document.getElementById("status").innerText = "Oops! Something went wrong.";
+      document.querySelectorAll(".status").innerText = "Oops! Something went wrong.";
     });
         })
       })

@@ -572,7 +572,7 @@ background-color: #E1E3E6 !important
               class="img-fluid mb-3"
               style="max-height: 60px"
             />
-            <form action="https://formsubmit.co/sujaymaster111@gmail.com" method="POST">
+            <form id="contact-form">
             <input
             name="name"
               type="text"
@@ -604,6 +604,7 @@ background-color: #E1E3E6 !important
             >
               <i class="bi bi-telephone-fill me-2"></i> +916364840379
             </button>
+            <div id="status"></div>
           </div>
         </div>
       </div>
@@ -3850,6 +3851,24 @@ Blog Area
           },
         },
       });
+      document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent page reload
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch("https://formsubmit.co/sujaymaster111@gmail.com", {
+      method: "POST",
+      body: data
+    })
+    .then(response => {
+      document.getElementById("status").innerText = "Thank you! Your message has been sent.";
+      form.reset();
+    })
+    .catch(error => {
+      document.getElementById("status").innerText = "Oops! Something went wrong.";
+    });
+  });
     </script>
     
     

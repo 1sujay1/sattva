@@ -304,9 +304,10 @@ h6 {
   font-family: var(--title-font);
   color: var(--title-color);
   text-transform: none;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.4;
   margin: 0 0 15px 0;
+  
 }
 
 .h1,
@@ -325,7 +326,7 @@ h1 {
 
 .h2,
 h2 {
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1.333;
 }
 

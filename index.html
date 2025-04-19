@@ -18,6 +18,7 @@
     />
 
     <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -3919,6 +3920,30 @@ Blog Area
   
   </script>
     
+    <script>
+      // Create anchor link
+      const waLink = document.createElement("a");
+      waLink.href = "https://wa.me/916364840379"; // Replace with your number
+      waLink.target = "_blank";
+      waLink.style.position = "fixed";
+      waLink.style.bottom = "100px";
+      waLink.style.right = "40px";
+      waLink.style.zIndex = "9999";
+      waLink.style.backgroundColor = "#25D366";
+      waLink.style.padding = "12px";
+      waLink.style.borderRadius = "50%";
+      waLink.style.boxShadow = "0 2px 5px rgba(0,0,0,0.3)";
+      waLink.style.color = "white";
+      waLink.style.textAlign = "center";
     
+      // Create icon
+      const waIcon = document.createElement("i");
+      waIcon.className = "fab fa-whatsapp";
+      waIcon.style.fontSize = "24px";
+    
+      // Append and show
+      waLink.appendChild(waIcon);
+      document.body.appendChild(waLink);
+    </script>
   </body>
 </html>

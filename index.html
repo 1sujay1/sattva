@@ -445,22 +445,22 @@ background-color: #E1E3E6 !important
         <div class="th-mobile-menu">
           <ul>
             <li>
-              <a href="#hero"> Home </a>
+              <a href="#hero" onclick="scrollToFloorPlan(event,this)"> Home </a>
             </li>
             <li class="">
-              <a href="#features"> Amenities </a>
+              <a href="#features" onclick="scrollToFloorPlan(event,this)"> Amenities </a>
             </li>
             <li class="">
-              <a href="#floorPlan"> Floor Plan </a>
+              <a href="#floorPlan" onclick="scrollToFloorPlan(event,this)"> Floor Plan </a>
             </li>
             <li class="">
-              <a href="#pricelist"> Price List </a>
+              <a href="#pricelist" onclick="scrollToFloorPlan(event,this)"> Price List </a>
             </li>
             <li class="">
-              <a href="#gallerySection"> Gallery </a>
+              <a href="#gallerySection" onclick="scrollToFloorPlan(event,this)"> Gallery </a>
             </li>
             <li class="">
-              <a href="#ourLocations"> Location </a>
+              <a href="#ourLocations" onclick="scrollToFloorPlan(event,this)"> Location </a>
             </li>
           </ul>
         </div>
@@ -657,19 +657,19 @@ background-color: #E1E3E6 !important
                       <a href="#hero"> Home </a>
                     </li>
                     <li class="">
-                      <a href="#features"> Amenities </a>
+                      <a href="#features" onclick="scrollToFloorPlan(event,this)"> Amenities </a>
                     </li>
                     <li class="">
-                      <a href="#" onclick="scrollToFloorPlan()"> Floor Plans </a>
+                      <a href="#floorPlan" onclick="scrollToFloorPlan(event,this)"> Floor Plans </a>
                     </li>
                     <li class="">
-                      <a href="#priceTitle"> Price List </a>
+                      <a href="#priceTitle" onclick="scrollToFloorPlan(event,this)"> Price List </a>
                     </li>
                     <li class="">
-                      <a href="#gallerySection"> Gallery </a>
+                      <a href="#gallerySection" onclick="scrollToFloorPlan(event,this)"> Gallery </a>
                     </li>
                     <li class="">
-                      <a href="#ourLocations"> Location </a>
+                      <a href="#ourLocations" onclick="scrollToFloorPlan(event,this)"> Location </a>
                     </li>
                     <!-- <li><a href="#about-sec"> About Us </a></li>
                     <li>
@@ -4078,11 +4078,13 @@ Blog Area
       document.body.appendChild(waLink);
     </script>
     <script>
-     function scrollToFloorPlan() {
-    const section = document.getElementById("floorPlan");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      window.location.hash = "floorPlan"; // This updates the URL with #floorPlan
+     function scrollToFloorPlan(e,el) {
+      e.preventDefault();
+      const id = el.getAttribute('href').substring(1); // remove #
+    const target = document.getElementById(id);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+      window.location.hash = id;
     }
   }
     </script>

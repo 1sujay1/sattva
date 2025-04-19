@@ -660,7 +660,7 @@ background-color: #E1E3E6 !important
                       <a href="#features"> Amenities </a>
                     </li>
                     <li class="">
-                      <a href="#floorPlan"> Floor Plan </a>
+                      <a href="#" onclick="scrollToFloorPlan()"> Floor Plans </a>
                     </li>
                     <li class="">
                       <a href="#priceTitle"> Price List </a>
@@ -2461,7 +2461,7 @@ Counter Area
 
     <section
       class="bg-white space overflow-hidden"
-      id="floorPlan"
+      id="floorPlan2"
       data-bg-src="assets/img/bg/property-plan-bg-1.png"
     >
       <div class="container">
@@ -4076,6 +4076,15 @@ Blog Area
       // Append and show
       waLink.appendChild(waIcon);
       document.body.appendChild(waLink);
+    </script>
+    <script>
+     function scrollToFloorPlan() {
+    const section = document.getElementById("floorPlan");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      window.location.hash = "floorPlan"; // This updates the URL with #floorPlan
+    }
+  }
     </script>
   </body>
 </html>

@@ -34572,4 +34572,65 @@ span.select2-selection.select2-selection--single:focus {
   border: none;
 }
 
+/* NRI*/
+.nri-assistance-section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.nri-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.nri-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.nri-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.nri-content ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.nri-content ul li {
+  margin-bottom: 12px;
+}
+
+.nri-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: right;
+}
+
+.nri-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nri-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nri-image {
+    text-align: center;
+  }
+}
 
